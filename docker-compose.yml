@@ -26,7 +26,7 @@ services:
     labels:
       - "traefik.enable=true" 
       - "traefik.http.routers.imageapi.entrypoints=websecure"
-      - "traefik.http.routers.imageapi.rule=PathPrefix(`/api`)"
+      - "traefik.http.routers.imageapi.rule=PathPrefix(`/fbwa-backend-api`)"
       - "traefik.http.routers.imageapi.tls.certresolver=letsencrypt" 
       - "traefik.http.services.imageapi.loadbalancer.server.port=8080"
       - "traefik.docker.network=container_app_network" 
@@ -43,7 +43,7 @@ services:
     labels:
       - "traefik.enable=true" 
       - "traefik.http.routers.frontend.entrypoints=websecure"
-      - "traefik.http.routers.frontend.rule=PathPrefix(`/image`)"
+      - "traefik.http.routers.frontend.rule=PathPrefix(`/fbwa-frontend`)"
       - "traefik.http.routers.frontend.tls.certresolver=letsencrypt" 
       - "traefik.http.services.frontend.loadbalancer.server.port=80"
       - "traefik.docker.network=container_app_network" 
