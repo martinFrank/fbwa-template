@@ -1,6 +1,7 @@
 package com.github.martinfrank.elitegames.backend;
 
-import com.github.martinfrank.elitegames.adventureserver.server.user.UserService;
+
+import com.github.martinfrank.elitegames.backend.user.UserService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

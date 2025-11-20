@@ -49,7 +49,7 @@ services:
       - "traefik.docker.network=container_app_network" 
 
 networks:
-  imageorganiser_network:
+  bfwa_network:
     driver: bridge
   container_app_network:
     external: true

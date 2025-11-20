@@ -1,10 +1,8 @@
 import axios from "axios";
 
 export const api = axios.create({
-  //baseURL: "http://backend:8080/api",
-  //baseURL: "http://192.168.0.24:8080/api",
-  baseURL: "http://localhost:8080/api",
-  //baseURL: "https://localhost:8443/api",
+  // baseURL: "http://backend:8080/backend-api"
+  baseURL: "http://localhost:8482/fbwa-backend-api"
 });
 
 api.interceptors.request.use((config) => {
