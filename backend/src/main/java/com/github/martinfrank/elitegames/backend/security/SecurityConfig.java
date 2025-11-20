@@ -76,7 +76,7 @@ public class SecurityConfig {
     private List<String> allowedOrigins() {
         String withDev = """
         https://elitegames.v6.rocks,
-        https://elitegames.chickenkiller.com
+        https://192.168.0.250
         """;
         return Arrays.stream(withDev.split(",")).map(String::trim).toList();
     }
