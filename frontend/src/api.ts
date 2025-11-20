@@ -1,8 +1,7 @@
 import axios from "axios";
 
-export const api = axios.create({
-  // baseURL: "http://backend:8080/backend-api"
-  baseURL: "http://localhost:8482/fbwa-backend-api"
+export const api = axios.create({ 
+  baseURL: "https://elitegames.v6.rocks/fbwa-backend-api"
 });
 
 api.interceptors.request.use((config) => {
